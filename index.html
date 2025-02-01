@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Portfolio</a>
+      <div class="nav-right">
+        <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <i data-lucide="sun"></i>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Seif Gamal</span></h1>
+          <p>A  Passionate Full Stack .NET developer at your service.<br>
+            We build the tech, you drive your success.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="button primary">Get in touch</a>
+            <a href="#projects" class="button secondary">View my work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="pfp.jpg" alt="Profile">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About me</h2>
+      <div class="about-item">
+        <p>
+            "I’m a passionate and proficient full-stack .NET developer, dedicated to building high-quality websites for you. 
+            My focus is on delivering solutions that are reliable, scalable, and consistent, all while following best practices 
+            in architecture and design. Whether you need a dynamic website or a smooth, high-performing system, I’m 
+            here to help bring your vision to life. Let’s create something amazing together"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <div class="education-icon">
+          <i data-lucide="book-open"></i>
+        </div>
+        <div class="education-content">
+          <h3>Bachelor of Computer Science</h3>
+          <p class="institution">Cairo University</p>
+          <p class="year">2022 - present</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- added dynamically using js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="workieeMockup.png" alt="Workiee">
+          <div class="project-content">
+            <h3>Workiee</h3>
+            <p>
+                Developed a browse jobs page with search 
+                and filtering for an optimized user 
+                experience and optimized database 
+                queries and front-end performance for a 
+                seamless user experience
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Yousef-Albasel/Workiee-Job-Portal.git" class="project-link">
+                <i data-lucide="github"></i> Code
+              </a>
+              <!-- <a href="#" class="project-link">
+                <i data-lucide="external-link"></i> Live Demo
+              </a> -->
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:seifgamalrayan@gmail.com" class="contact-link">
+          <i data-lucide="mail"></i>
+          seifgamalrayan@gmail.com
+        </a>
+        <a href="https://github.com/seif-github" class="contact-link">
+          <i data-lucide="github"></i>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/seif-gamal-sg/" class="contact-link">
+          <i data-lucide="linkedin"></i>
+          LinkedIn
+        </a>
+        <a href="https://wa.me/+201097824075" class="contact-link">
+            <i data-lucide="message-circle"></i>
+            WhatsApp
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Seif Gamal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
